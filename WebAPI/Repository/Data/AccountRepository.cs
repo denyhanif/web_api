@@ -76,7 +76,7 @@ namespace WebAPI.Repository.Data
                 //Smtp Config
                 SmtpClient client = new SmtpClient();
                 client.Connect("smtp.gmail.com", 465, true);
-                client.Authenticate("emailmii112@gmail.com", "pengamanmii11");
+                client.Authenticate("emailmii112@gmail.com", "");
 
                 //message.Body();
             }
