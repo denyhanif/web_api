@@ -48,7 +48,6 @@ D:\dev\METRODATA1\koding\api\WebAPI\WebAPI\bin\Debug\netcoreapp3.1\runtimes\win-
 D:\dev\METRODATA1\koding\api\WebAPI\WebAPI\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 D:\dev\METRODATA1\koding\api\WebAPI\WebAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\dev\METRODATA1\koding\api\WebAPI\WebAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\dev\METRODATA1\koding\api\WebAPI\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csproj.AssemblyReference.cache
 D:\dev\METRODATA1\koding\api\WebAPI\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.GeneratedMSBuildEditorConfig.editorconfig
 D:\dev\METRODATA1\koding\api\WebAPI\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.AssemblyInfoInputs.cache
 D:\dev\METRODATA1\koding\api\WebAPI\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.AssemblyInfo.cs
@@ -71,3 +70,5 @@ D:\dev\METRODATA1\koding\api\WebAPI\WebAPI\bin\Debug\netcoreapp3.1\BCrypt.Net-Co
 D:\dev\METRODATA1\koding\api\WebAPI\WebAPI\bin\Debug\netcoreapp3.1\MailKit.dll
 D:\dev\METRODATA1\koding\api\WebAPI\WebAPI\bin\Debug\netcoreapp3.1\MimeKit.dll
 D:\dev\METRODATA1\koding\api\WebAPI\WebAPI\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+D:\dev\METRODATA1\koding\api\WebAPI\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csproj.AssemblyReference.cache
+D:\dev\METRODATA1\koding\api\WebAPI\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll

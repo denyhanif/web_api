@@ -47,7 +47,14 @@ namespace WebAPI.Controllers
         [Route("registeredData")]
         [HttpGet]
         //[Route("api/[controller]/registeredData")]
-       
+
+        
+        [HttpGet("TestCORS")]
+        public ActionResult TestCORS()
+        {
+            return Ok("test cors berhasil");
+        }
+
 
         public ActionResult RegisteredData()
         {

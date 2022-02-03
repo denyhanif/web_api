@@ -16,6 +16,9 @@ namespace WebAPI.Context
         public DbSet<Profilling> Profillings { set; get; }
         public DbSet<University> Universities { set; get; }
         public DbSet<Education> Educations { set; get; }
+        public DbSet<AccountRole> AccountRoles { set; get; }
+        public DbSet<Role> Roles { set; get; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Employee>()
@@ -35,6 +38,14 @@ namespace WebAPI.Context
             modelBuilder.Entity<University>()
                 .HasMany(c => c.Educations)
                 .WithOne(e => e.University);
+
+            modelBuilder.Entity<Account>()
+                .HasMany(c=>c.AccountRole)
+                .WithOne(e=> e.Account);
+
+            modelBuilder.Entity<Role>()
+              .HasMany(c => c.AccountRole)
+              .WithOne(e => e.Role);
         }
     }
 }

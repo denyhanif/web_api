@@ -25,5 +25,9 @@ namespace WebAPI.Model
         public DateTime ExpiredToken { set; get; }
 
         public bool isUsed { set; get; }
+
+
+        public virtual ICollection<AccountRole> AccountRole { set; get; }
+       // public virtual ICollection<AccountRole> AccountRole { get; set; }
     }
 }
