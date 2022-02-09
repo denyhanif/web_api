@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,7 @@ namespace WebAPI.Controllers
            this.employerepo = employeeRepository;
         }
 
+        
         [HttpPost("{RegisterVM}")]
 
         public IActionResult Register(RegisterVM registervm)
@@ -44,22 +46,12 @@ namespace WebAPI.Controllers
             return StatusCode(400, new { status = HttpStatusCode.BadRequest, result, message = "Insert gagal" });
 
         }
-        [Route("registeredData")]
-        [HttpGet]
-        //[Route("api/[controller]/registeredData")]
-
-        
-        [HttpGet("TestCORS")]
-        public ActionResult TestCORS()
-        {
-            return Ok("test cors berhasil");
-        }
-
-
+        //[Route]
+        [HttpGet("registeredData")]
         public ActionResult RegisteredData()
         {
             var result = employerepo.GetRegister();
-            if (result !=null ) 
+            if (result != null)
             {
                 return StatusCode(200, new { status = HttpStatusCode.OK, result, message = "data berhasil ditampilkan" });
             }
@@ -67,7 +59,18 @@ namespace WebAPI.Controllers
             {
                 return StatusCode(400, new { status = HttpStatusCode.NotFound, result, message = "Data kosong" });
             }
-            
+
         }
+        //[Route("api/[controller]/registeredData")]
+
+
+        [HttpGet("TestCORS")]
+        public ActionResult TestCORS()
+        {
+            return Ok("test cors berhasil");
+        }
+
+
+
     }
 }

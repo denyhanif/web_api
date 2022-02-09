@@ -68,10 +68,22 @@ namespace WebAPI
             }
             );
 
-            services.AddCors(c =>
+            //services.AddCors(c =>
+            //{
+            //    c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin().AllowAnyMethod());
+            //});
+            services.AddCors(options =>
             {
-                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
+                options.AddDefaultPolicy(
+                builder =>
+                {
+                    builder.WithOrigins("https://localhost:44302")
+                    .AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .AllowCredentials();
+                });
             });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -81,6 +93,7 @@ namespace WebAPI
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseCors();
             app.UseCors(options => options.AllowAnyOrigin());
 
             app.UseHttpsRedirection();

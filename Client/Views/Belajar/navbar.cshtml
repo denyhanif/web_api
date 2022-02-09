@@ -67,7 +67,128 @@
             </div>
 
         </div>
+
+
+        <div class="">
+            <table id="tableSW" class="table table-hover" style="width: 100%;">
+                <thead class="thead-dark">
+                    <tr>
+
+                        <th width="10%" >NO</th>
+                        <th>Name</th>
+                        <th>Actions</th>
+
+                    </tr>
+                </thead>
+                <tbody class="text-capitalize">
+                </tbody>
+            </table>
+        </div>
+
     </div>
+
+    
+
+    <div class="">
+        <!-- Button trigger modal -->
+        @*<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Action
+        </button>*@
+
+        <!-- Modal -->
+        <div class="modal fade" id="detailModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Detail Pokemon</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    @*onclick="Detail('${row.url}')"*@
+                <div class="modal-body">
+                    @*<div class="row">
+                        <div class="col-md-6">
+                            <div class="modal-image">
+                                <img src="${result.sprites.other.dream_world.front_default}" alt="Alternate Text" style="width:100%" />
+                            </div>
+                            <div class="type">
+                                ${badge}
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 ">
+                            <div class="row detail">
+                                <table class="table table-striped p-1">
+                                    <thead>
+                                        <tr>
+                                            <th class="th-detail text-center" colspan="2">Detail</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Name:</td>
+                                            <td>${result.name}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ability:</td>
+                                            <td>${ability}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Weight:</td>
+                                            <td>${result.weight}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Height:</td>
+                                            <td>${result.height}</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="detail-tab" data-toggle="tab" href="#detail" role="tab" aria-controls="home" aria-selected="true">Detail</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="stat-tab" data-toggle="tab" href="#stat" role="tab" aria-controls="profile" aria-selected="false">Stat</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="move-tab" data-toggle="tab" href="#move" role="tab" aria-controls="profile" aria-selected="false">Moves</a>
+                            </li>
+                        </ul>
+                        <div class="tab-pane fade show active" id="detail" role="tabpanel" aria-labelledby="home-tab">
+                            <table class="table table-hover table-striped">
+                                <tr>
+                                    <td>Name</td>
+                                    <td class="col-8">: ${result.name}</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="stat" role="tabpanel" aria-labelledby="profile-tab">
+                            <table class="table table-hover ">
+                                ${stat}
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="move" role="tabpanel" aria-labelledby="move-tab">
+                            <table class="table table-hover ">
+                                <ol>
+                                    ${move}
+                                    <ol>
+                            </table>
+                        </div>
+
+                    </div>*@
+
+                </div>
+                </div>
+            </div>
+        </div>
 
     <div class="footer ">
         <!-- Footer -->
@@ -81,4 +202,5 @@
         </footer>
         <!-- Footer -->
     </div>
+</div>
 </div>

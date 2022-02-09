@@ -6,17 +6,11 @@ using System.Threading.Tasks;
 
 namespace Client.Controllers
 {
-    public class BelajarController : Controller
+    public class EmployeesController : Controller
     {
         public IActionResult Index()
         {
             return View();
         }
-        public IActionResult Navbar()
-        {
-            return View();
-        }
-
-       
     }
 }

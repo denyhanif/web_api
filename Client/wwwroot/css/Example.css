@@ -39,3 +39,51 @@ section#b li:nth-child(4) {
     height: 600px;
     width:auto;
 }
+.modal-image {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 30px;
+    padding:2px;
+}
+table{
+    width:100%;
+    padding: 0;
+}
+.th-detail {
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    background-color: #041C32;
+    color: navajowhite;
+    border-radius: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.detail {
+    /*border: solid black 1px;*/
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.type{
+    position:relative;
+    margin-top:10%;
+    margin-left:25%;
+}
+tr{
+    margin: 5px;
+    padding:5px;
+}
+thead {
+    text-align: center;
+}
+.ability{
+    background-color:cyan;
+  
+}
+.stats {
+    margin-right:20px;
+    padding:0;
+}

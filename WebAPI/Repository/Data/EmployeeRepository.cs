@@ -122,6 +122,8 @@ namespace WebAPI.Repository.Data
 
             var result = (from emp in context.Employees
                           join acc in context.Accounts on emp.NIK equals acc.NIK
+                          join accrole in context.AccountRoles on acc.NIK equals accrole.Account_id
+                          join role in context.Roles on accrole.Role_id equals role.Id
                           join prof in context.Profillings on acc.NIK equals prof.NIK
                           join edu in context.Educations on prof.Education_id equals edu.Id
                           join univ in context.Universities on edu.University_id equals univ.Id
@@ -133,6 +135,7 @@ namespace WebAPI.Repository.Data
                               email= emp.Email,
                               degree = edu.Degree,
                               universitas = univ.Name,
+                              role = role.Name,
                             
                           });
                           

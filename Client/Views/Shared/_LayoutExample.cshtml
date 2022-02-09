@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Client</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
     <link rel="stylesheet" href="~/css/Example.css" />
 </head>
 <body>
     <header>
-        
     </header>
     <div class="container">
         <main role="main" class="pb-3">
@@ -18,11 +18,14 @@
     </div>
 
     <footer class="border-top footer text-muted">
-        
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
+
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    @*<script src="~/js/site.js" asp-append-version="true"></script>*@
+    <script src="~/js/datatable.js" asp-append-version="true"></script>
+
     @RenderSection("Scripts", required: false)
 </body>
 </html>

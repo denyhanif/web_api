@@ -114,3 +114,4 @@ D:\dev\METRODATA1\koding\api\WebAPI\Client\bin\Debug\netcoreapp3.1\zh-Hant\Micro
 D:\dev\METRODATA1\koding\api\WebAPI\Client\obj\Debug\netcoreapp3.1\Razor\Views\Belajar\Index.cshtml.g.cs
 D:\dev\METRODATA1\koding\api\WebAPI\Client\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutExample.cshtml.g.cs
 D:\dev\METRODATA1\koding\api\WebAPI\Client\obj\Debug\netcoreapp3.1\Razor\Views\Belajar\navbar.cshtml.g.cs
+D:\dev\METRODATA1\koding\api\WebAPI\Client\obj\Debug\netcoreapp3.1\Razor\Views\Employees\Index.cshtml.g.cs
